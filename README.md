@@ -3,5 +3,5 @@ Web application made with React. Features routing with React Router, Hooks (useS
 
 [View it live here](https://react-tours-ljfiv.netlify.app/)
 
-[![](https://github.com/louisiaegerv/Project-Images/blob/master/React-Tours-image.png?raw=true)](https://react-tours-ljfiv.netlify.app/)
+[![](https://github.com/louisiaegerv/Project-Images/blob/master/react-tours-image.png?raw=true)](https://react-tours-ljfiv.netlify.app/)
 
