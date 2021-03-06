@@ -258,7 +258,8 @@ Tours
   padding: 0.25rem 0.5rem;
   border-radius: var(--radius);
 }
-.single-tour footer {
+.single-tour footer,
+.single-tour .tour-info {
   padding: 1.5rem 2rem;
 }
 .single-tour .delete-btn {
@@ -271,6 +272,11 @@ Tours
   border: 1px solid var(--clr-red-dark);
   padding: 0.25rem 0.5rem;
   border-radius: var(--radius);
+}
+
+.delete-btn:hover {
+  background-color: var(--clr-red-dark);
+  color: var(--clr-white);
 }
 
 @media (min-width: 700px) {

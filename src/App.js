@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import Error from './components/Error'
 import Loading from './components/Loading'
 import Tours from './components/Tours'
+import TourDetail from './components/TourDetail'
 
 const url = 'https://course-api.com/react-tours-project'
 
@@ -50,6 +51,9 @@ const App = () => {
             </Route>
             <Route path='/about'>
               <About />
+            </Route>
+            <Route path='/tours/:id'>
+              {loading ? <Loading /> : <TourDetail tours={tours} />}
             </Route>
             <Route to='*'>
               <Error />

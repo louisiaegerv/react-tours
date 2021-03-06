@@ -1,11 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Tour = ({ tour, removeTour }) => {
   const { id, image, name, info, price } = tour
   return (
     <>
       <article key={id} className='single-tour'>
-        <img src={image} alt='' />
+        <Link to={`/tours/${id}`}>
+          <img src={image} alt='' />
+        </Link>
         <footer>
           <div className='tour-info'>
             <h4>{name}</h4>
