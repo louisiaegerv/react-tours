@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className='nav'>
       <div className='site-title'>
         <p>
-          <Link to='/'>✈️ World Tours</Link>
+          <Link to='/'>✈️ React World Tours</Link>
         </p>
       </div>
       <section className='nav-links'>
