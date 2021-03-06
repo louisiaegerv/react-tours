@@ -41,6 +41,7 @@ Variables
   --radius: 0.25rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --darker-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   --max-width: 1170px;
   --fixed-width: 820px;
 }
@@ -70,6 +71,7 @@ ul {
 }
 a {
   text-decoration: none;
+  color: unset;
 }
 h1,
 h2,
@@ -145,6 +147,11 @@ p {
   cursor: pointer;
   margin-top: 2rem;
   font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--clr-primary-4);
 }
 /*
 =============== 
@@ -212,8 +219,7 @@ Tours
   transition: var(--transition);
 }
 .single-tour:hover {
-  /* box-shadow: var(--dark-shadow); */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--darker-shadow);
 }
 
 .single-tour:hover img {
