@@ -18,11 +18,11 @@ const TourDetail = ({ tours }) => {
   }, [id])
 
   return (
-    <>
+    <section className='tour-detail'>
       {tour ? (
         <>
-          <h3>{tour.name}</h3>
-          <p>${tour.price}</p>
+          <h2>{tour.name}</h2>
+          <h3>${tour.price}</h3>
           <p>{tour.info}</p>
           <img src={tour.image} alt='' />
         </>
@@ -36,7 +36,7 @@ const TourDetail = ({ tours }) => {
           </Link>
         </section>
       )}
-    </>
+    </section>
   )
 }
 

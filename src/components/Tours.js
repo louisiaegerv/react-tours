@@ -1,7 +1,7 @@
 import React from 'react'
 import Tour from './Tour'
 
-const Tours = ({ tours, removeTour }) => {
+const Tours = ({ tours, removeTour, getTours }) => {
   return (
     <>
       <header className='title'>
@@ -12,14 +12,19 @@ const Tours = ({ tours, removeTour }) => {
       {tours.length ? (
         <section className='tour-list'>
           {tours.map((tour) => (
-            <Tour tour={tour} removeTour={removeTour} />
+            <Tour key={tour.id} tour={tour} removeTour={removeTour} />
           ))}
         </section>
       ) : (
-        <p style={{ textAlign: 'center' }}>
-          That's all our tours for now! We add new ones each week, so come back
-          later to see if any others look like a match.
-        </p>
+        <div className='center'>
+          <p>
+            That's all our tours for now! We add new ones each week, so come
+            back later to see if any others look like a match.
+          </p>
+          <button className='btn' onClick={getTours}>
+            Restore all Tours
+          </button>
+        </div>
       )}
     </>
   )

@@ -121,6 +121,10 @@ p {
     line-height: 1;
   }
 }
+
+.center {
+  text-align: center;
+}
 /*  global classes */
 
 /* section */
@@ -277,6 +281,10 @@ Tours
 .delete-btn:hover {
   background-color: var(--clr-red-dark);
   color: var(--clr-white);
+}
+
+.tour-detail img {
+  width: 100%;
 }
 
 @media (min-width: 700px) {

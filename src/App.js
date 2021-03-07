@@ -46,7 +46,11 @@ const App = () => {
               {loading ? (
                 <Loading />
               ) : (
-                <Tours tours={tours} removeTour={removeTour} />
+                <Tours
+                  tours={tours}
+                  removeTour={removeTour}
+                  getTours={getTours}
+                />
               )}
             </Route>
             <Route path='/about'>
